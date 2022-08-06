@@ -27,10 +27,12 @@
           <div class="form-group pb-3">
             <asp:Label ID="Label2" runat="server" Text="Username"></asp:Label>
             <asp:TextBox ID="uname" CssClass="form-control" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ForeColor="Red" ControlToValidate="uname" runat="server" ErrorMessage="Please enter username"></asp:RequiredFieldValidator>
           </div>
           <div class="form-group pb-3">
             <asp:Label ID="Label1" runat="server" Text="Password"></asp:Label>
             <asp:TextBox ID="pwd" CssClass="form-control" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ForeColor="Red" runat="server" ControlToValidate="pwd" ErrorMessage="Plesae enter password"></asp:RequiredFieldValidator>
           </div>
           <div class="pb-2">
               <asp:Button ID="signin" runat="server" CssClass="form-control btn btn-dark w-100 font-weight-bold mt-2" Text="Sign In" OnClick="signin_Click1" />

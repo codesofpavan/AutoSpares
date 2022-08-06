@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            You're Logged in.
+           <h1>Content of the Spare parts Homepage.</h1>
         </div>
     </form>
 </body>

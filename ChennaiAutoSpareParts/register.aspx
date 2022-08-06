@@ -40,11 +40,9 @@
           </div>
           <div class="form-group pb-3">
             <asp:Label ID="Label1" runat="server" Text="Password"></asp:Label>
-            <asp:TextBox ID="pwd" runat="server">
-
+            <asp:TextBox ID="pwd" runat="server" CssClass="form-control">
             </asp:TextBox>  
               <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="pwd" ForeColor="Red" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
-                
           </div>
           <div class="pb-2">
               <asp:Button ID="signup" runat="server" CssClass="form-control btn btn-dark w-100 font-weight-bold mt-2" Text="Sign Up" OnClick="signup_Click" />

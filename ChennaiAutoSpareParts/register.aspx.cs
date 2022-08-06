@@ -36,6 +36,7 @@ namespace ChennaiAutoSpareParts
                     email.Text = "";
                     mobnum.Text = "";
                     uname.Focus();
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Record Inserted Successfully')", true);
                     Response.Redirect("login.aspx");
                 }
 
