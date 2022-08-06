@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SparePartsModelStoreContainer" CdmEntityContainer="SparePartsEntities">
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="SparePartsModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="items">
+      <EntityTypeMapping TypeName="SparePartsModel.item">
+        <MappingFragment StoreEntitySet="item">
+          <ScalarProperty Name="item_id" ColumnName="item id" />
+          <ScalarProperty Name="item_name" ColumnName="item name" />
+          <ScalarProperty Name="item_description" ColumnName="item description" />
+          <ScalarProperty Name="item_cost" ColumnName="item cost" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
